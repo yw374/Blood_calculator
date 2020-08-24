@@ -22,11 +22,13 @@ def get_input():
     a = input("Input HDL level: ")
     return int(a)
 
-# def Check_input(a):
-#     if a >= 60:
-#         print("Normal")
-#     elif a >= 40 && a < 60:
-#         print("Borderline Low")
+def Check_input(a):
+    if a >= 60:
+        print("Normal")
+    elif a >= 40 && a < 60:
+        print("Borderline Low")
+    elif a < 40:
+        print("Low")
 
 
 
