@@ -16,6 +16,7 @@ def HDL_driver(a):
     #Get input
     Input = get_input()
     #Check if HDL is normal
+    Check_input(Input)
     #Output
 
 def get_input():
