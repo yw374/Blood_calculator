@@ -35,7 +35,7 @@ def Check_input(a):
 
 def Output(input, results):
     print("Your HDL level is {}".format(input))
-    print("Which is ".format(results))
+    print("Which is {}".format(results))
     return
 
 if __name__ == "__main__":
