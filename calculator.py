@@ -38,5 +38,5 @@ def Output(input, results):
     print("Which is ".format(results))
     return
 
-
-interface()
+if __name__ == "__main__":
+    interface()
