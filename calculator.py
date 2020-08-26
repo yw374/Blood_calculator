@@ -5,6 +5,7 @@ def interface():
         print("1 - HDL")
         print("9 - Quit")
         choice = input("Enter my choice: ")
+
         if choice == '9':
             return
         elif choice == '1':
