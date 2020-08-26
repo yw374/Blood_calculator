@@ -5,19 +5,20 @@ def interface():
         print("1 - HDL")
         print("9 - Quit")
         choice = input("Enter my choice: ")
-        if choice=='9':
+        if choice == '9':
             return
         elif choice == '1':
             HDL_driver()
 
-#call three functions
 
-def HDL_driver(a):
+def HDL_driver():
     #Get input
     Input = get_input()
     #Check if HDL is normal
-    Check_input(Input)
+    Analysis = Check_input(Input)
     #Output
+    Output(Input, Analysis)
+    return
 
 def get_input():
     a = input("Input HDL level: ")
@@ -25,12 +26,16 @@ def get_input():
 
 def Check_input(a):
     if a >= 60:
-        print("Normal")
-    elif a >= 40 && a < 60:
-        print("Borderline Low")
+        return "Normal"
+    elif 40 <= a < 60:
+        return "Borderline Low"
     elif a < 40:
-        print("Low")
+        return "Low"
 
+def Output(input, results):
+    print("Your HDL level is {}".format(input))
+    print("Which is ".format(results))
+    return
 
 
 interface()
